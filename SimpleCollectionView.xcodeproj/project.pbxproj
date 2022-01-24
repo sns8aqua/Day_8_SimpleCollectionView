@@ -16,6 +16,8 @@
 		EE93D1BA27987643008A81D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE93D1B827987643008A81D9 /* LaunchScreen.storyboard */; };
 		EE93D1C527987643008A81D9 /* SimpleCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D1C427987643008A81D9 /* SimpleCollectionViewTests.swift */; };
 		EE93D1D027987643008A81D9 /* SimpleCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D1CF27987643008A81D9 /* SimpleCollectionViewUITests.swift */; };
+		EE93D1DE279876E5008A81D9 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D1DD279876E5008A81D9 /* NumberCollectionViewCell.swift */; };
+		EE93D1E027987C1F008A81D9 /* ViewController+CollectionViewDelegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D1DF27987C1F008A81D9 /* ViewController+CollectionViewDelegateMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		EE93D1CB27987643008A81D9 /* SimpleCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE93D1CF27987643008A81D9 /* SimpleCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewUITests.swift; sourceTree = "<group>"; };
 		EE93D1D127987643008A81D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE93D1DD279876E5008A81D9 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE93D1DF27987C1F008A81D9 /* ViewController+CollectionViewDelegateMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CollectionViewDelegateMethods.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,7 @@
 			children = (
 				EE93D1AA27987642008A81D9 /* AppDelegate.swift */,
 				EE93D1AC27987642008A81D9 /* SceneDelegate.swift */,
-				EE93D1AE27987642008A81D9 /* ViewController.swift */,
+				EE93D1E127987CDA008A81D9 /* HomePage */,
 				EE93D1B027987642008A81D9 /* Main.storyboard */,
 				EE93D1B627987643008A81D9 /* Assets.xcassets */,
 				EE93D1B827987643008A81D9 /* LaunchScreen.storyboard */,
@@ -129,6 +133,40 @@
 				EE93D1D127987643008A81D9 /* Info.plist */,
 			);
 			path = SimpleCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		EE93D1E127987CDA008A81D9 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D1E427987D10008A81D9 /* Cell */,
+				EE93D1E327987CFC008A81D9 /* ViewModel */,
+				EE93D1E227987CE1008A81D9 /* ViewController */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		EE93D1E227987CE1008A81D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D1AE27987642008A81D9 /* ViewController.swift */,
+				EE93D1DF27987C1F008A81D9 /* ViewController+CollectionViewDelegateMethods.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EE93D1E327987CFC008A81D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE93D1E427987D10008A81D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D1DD279876E5008A81D9 /* NumberCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE93D1DE279876E5008A81D9 /* NumberCollectionViewCell.swift in Sources */,
+				EE93D1E027987C1F008A81D9 /* ViewController+CollectionViewDelegateMethods.swift in Sources */,
 				EE93D1AF27987642008A81D9 /* ViewController.swift in Sources */,
 				EE93D1AB27987642008A81D9 /* AppDelegate.swift in Sources */,
 				EE93D1B527987642008A81D9 /* SimpleCollectionView.xcdatamodeld in Sources */,
